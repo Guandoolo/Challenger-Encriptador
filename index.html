@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador/Desencriptador</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo_encabezado">Encriptador/Desencriptador de Texto</h1>
+  </header>
+  
+  <main class="principal">
+    <section class="entrada_texto">
+      <p class="etiqueta_entrada">Ingrese el texto aquí</p>
+      <textarea id="texto" class="area_texto" placeholder="Escribe aquí..."></textarea>
+      <div class="opciones_entrada">
+        <div class="checkbox_con_icono">
+          <img src="./assets/icono-alerta.png" alt="Alerta" class="icono_alerta">
+          <p class="etiqueta_checkbox">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones_entrada">
+          <button class="boton_entrada" id="botonEncriptar">Encriptar</button>
+          <button class="boton_entrada" id="botonDesencriptar">Desencriptar</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="salida_texto">
+      <img src="./assets/Muñeco.png" alt="Búsqueda" class="imagen_salida">
+      <p class="mensaje_salida">Ningún mensaje fue encontrado</p>
+      <p class="pista_salida">Ingresa el texto que desees encriptar o desencriptar.</p>
+      <button class="boton_copiar" id="botonCopiar">Copiar</button>
+    </section>
+  </main>
+  
+  <footer class="pie_pagina">
+    <p>Desarrollado por Osnived Padilla</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

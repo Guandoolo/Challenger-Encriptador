@@ -1,0 +1,178 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F2F2F2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo_encabezado {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0053A6;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.entrada_texto {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  
+}
+
+.etiqueta_entrada {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #0053A6;
+}
+
+.area_texto {
+  width: 100%;
+  height: 140px;
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: none;
+  margin: -9px;
+}
+
+.opciones_entrada {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox_con_icono {
+  display: flex;
+  align-items: center;
+}
+
+.icono_alerta {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.etiqueta_checkbox {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.botones_entrada {
+  display: flex;
+  gap: 10px;
+}
+
+.boton_entrada {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #0053A6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton_entrada:hover {
+  background-color: #003C82;
+}
+
+.salida_texto {
+  text-align: center;
+}
+
+.imagen_salida {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.mensaje_salida {
+  font-size: 1.2rem;
+  color: #0053A6;
+  margin-bottom: 10px;
+}
+
+.pista_salida {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.pie_pagina {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pie_pagina p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+  .principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .entrada_texto, .salida_texto {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titulo_encabezado {
+    font-size: 2rem;
+  }
+
+  .area_texto {
+    height: 200px;
+  }
+
+  .boton_entrada {
+    padding: 15px 30px;
+  }
+}
+
+.boton_copiar {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #28A745; /* Color verde para indicar acción positiva */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.boton_copiar:hover {
+  background-color: #218838; /* Color verde más oscuro al pasar el ratón */
+}
